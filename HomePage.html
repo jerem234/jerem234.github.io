@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px;
+            z-index: 1;
+        }
+
+        .logo-right {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 100px;
+            z-index: 1;
+        }
+
+        header {
+            background-color: #ff6f61;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .recipe-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .recipe-card img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            display: block; /* Center image */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .recipe-card::before {
+            content: '';
+            position: absolute;
+            background-color: #ff6f61;
+            width: 20px;
+            height: 100%;
+            top: 0;
+            left: -10px;
+            z-index: -1;
+        }
+
+        .recipe-card::after {
+            content: '';
+            position: absolute;
+            background-color: #ff6f61;
+            width: 20px;
+            height: 100%;
+            top: 0;
+            right: -10px;
+            z-index: -1;
+        }
+
+        .recipe-card h2 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .recipe-card p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .recipe-card a {
+            background-color: #ff6f61;
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .recipe-card a:hover {
+            background-color: #e64d3d;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        .featured-recipes {
+            text-align: center;
+            font-size: 3rem;
+            color: #ff6f61;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Cooking Delights Logo" class="logo">
+        <img src="images/logo.jpg" alt="Cooking Delights Logo" class="logo-right">
+        <h1>Cooking Delights!</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="RecipesPage.html">Recipes</a></li>
+            <li><a href="TipsAndTricks.html">Tips & Tricks</a></li>
+            <li><a href="AllergiesPage.html">Allergies</a></li>
+            <li><a href="Contact.html">Contact/About Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="featured-recipes">
+        Featured Recipes
+    </div>
+    
+    <main>
+        <section class="recipe-card">
+            <img src="images/spaghetti.jpg" alt="Spaghetti Carbonara">
+            <h2>Spaghetti Carbonara</h2>
+            <p>A classic Italian pasta dish made with eggs, Parmesan cheese, and pancetta to create a delicious explosion of flavor with every bite.</p>
+            <a href="recipes/Spaghetti.html">Read More</a>
+        </section>
+
+        <section class="recipe-card">
+            <img src="images/chicken.jpg" alt="Chicken Tikka Masala">
+            <h2>Chicken Tikka Masala</h2>
+            <p>A popular Indian dish consisting of marinated chicken in a creamy tomato sauce.</p>
+            <a href="recipes/Chicken.html">Read More</a>
+        </section>
+
+        <section class="recipe-card">
+            <img src="images/cookie.jpg" alt="Cookies">
+            <h2>Double Chocolate Chip Cookies</h2>
+            <p>Soft and chewy cookies loaded with chocolate chips, perfect for dessert or snacking.</p>
+            <a href="recipes/Cookies.html">Read More</a>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Cooking Delights. All rights reserved.</p>
+    </footer>
+</body>
+</html>
