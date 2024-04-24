@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allergies Page - Wireframe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px;
+            z-index: 1;
+        }
+
+        .logo-right {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 100px;
+            z-index: 1;
+        }
+
+        header {
+            background-color: #ff6f61;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .allergy-groups {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .allergy-group {
+            flex: 0 0 calc(33.33% - 20px);
+            margin-bottom: 20px;
+        }
+
+        .allergy-group h2 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .allergy-checkboxes {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: left;
+        }
+
+        .allergy-checkbox {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .allergy-checkbox input {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #ff6f61;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #e64d3d;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        .message-box {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Cooking Delights Logo" class="logo">
+        <img src="images/logo.jpg" alt="Cooking Delights Logo" class="logo-right">
+        <h1>Cooking Delights Allergies</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="RecipesPage.html">Recipes</a></li>
+            <li><a href="TipsAndTricks.html">Tips & Tricks</a></li>
+            <li><a href="AllergiesPage.html">Allergies</a></li>
+            <li><a href="Contact.html">Contact/About Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Allergies Page</h1>
+        <div class="allergy-groups">
+            <div class="allergy-group">
+                <h2>Dairy</h2>
+                <div class="allergy-checkboxes">
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="dairy-milk" name="dairy" value="dairy-milk">
+                        <label for="dairy-milk">Milk</label>
+                    </div>
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="dairy-cheese" name="dairy" value="dairy-cheese">
+                        <label for="dairy-cheese">Cheese</label>
+                    </div>
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="dairy-yogurt" name="dairy" value="dairy-yogurt">
+                        <label for="dairy-yogurt">Yogurt</label>
+                    </div>
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="dairy-butter" name="dairy" value="dairy-butter">
+                        <label for="dairy-butter">Butter</label>
+                    </div>
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="dairy-cream" name="dairy" value="dairy-cream">
+                        <label for="dairy-cream">Cream</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="allergy-group">
+                <h2>Gluten</h2>
+                <div class="allergy-checkboxes">
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="gluten-wheat" name="gluten" value="gluten-wheat">
+                        <label for="gluten-wheat">Wheat</label>
+                    </div>
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="gluten-barley" name="gluten" value="gluten-barley">
+                        <label for="gluten-barley">Barley</label>
+                    </div>
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="gluten-rye" name="gluten" value="gluten-rye">
+                        <label for="gluten-rye">Rye</label>
+                    </div>
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="gluten-oats" name="gluten" value="gluten-oats">
+                        <label for="gluten-oats">Oats</label>
+                    </div>
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="gluten-spelt" name="gluten" value="gluten-spelt">
+                        <label for="gluten-spelt">Spelt</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="allergy-group">
+                <h2>Nuts</h2>
+                <div class="allergy-checkboxes">
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="nuts-peanuts" name="nuts" value="nuts-peanuts">
+                        <label for="nuts-peanuts">Peanuts</label>
+                    </div>
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="nuts-almonds" name="nuts" value="nuts-almonds">
+                        <label for="nuts-almonds">Almonds</label>
+                    </div>
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="nuts-walnuts" name="nuts" value="nuts-walnuts">
+                        <label for="nuts-walnuts">Walnuts</label>
+                    </div>
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="nuts-cashews" name="nuts" value="nuts-cashews">
+                        <label for="nuts-cashews">Cashews</label>
+                    </div>
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="nuts-hazelnuts" name="nuts" value="nuts-hazelnuts">
+                        <label for="nuts-hazelnuts">Hazelnuts</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="allergy-group">
+                <h2>Animals</h2>
+                <div class="allergy-checkboxes">
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="animals-meat" name="animals" value="animals-meat">
+                        <label for="animals-meat">Meat</label>
+                    </div>
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="animals-fish" name="animals" value="animals-fish">
+                        <label for="animals-fish">Fish</label>
+                    </div>
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="animals-shellfish" name="animals" value="animals-shellfish">
+                        <label for="animals-shellfish">Shellfish</label>
+                    </div>
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="animals-eggs" name="animals" value="animals-eggs">
+                        <label for="animals-eggs">Eggs</label>
+                    </div>
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="animals-dairy" name="animals" value="animals-dairy">
+                        <label for="animals-dairy">Dairy</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="allergy-group">
+                <h2>Fruits</h2>
+                <div class="allergy-checkboxes">
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="fruits-apples" name="fruits" value="fruits-apples">
+                        <label for="fruits-apples">Apples</label>
+                    </div>
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="fruits-bananas" name="fruits" value="fruits-bananas">
+                        <label for="fruits-bananas">Bananas</label>
+                    </div>
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="fruits-oranges" name="fruits" value="fruits-oranges">
+                        <label for="fruits-oranges">Oranges</label>
+                    </div>
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="fruits-grapes" name="fruits" value="fruits-grapes">
+                        <label for="fruits-grapes">Grapes</label>
+                    </div>
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="fruits-kiwi" name="fruits" value="fruits-kiwi">
+                        <label for="fruits-kiwi">Kiwi</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="allergy-group">
+                <h2>Others</h2>
+                <div class="allergy-checkboxes">
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="others-soy" name="others" value="others-soy">
+                        <label for="others-soy">Soy</label>
+                    </div>
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="others-coconut" name="others" value="others-coconut">
+                        <label for="others-coconut">Coconut</label>
+                    </div>
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="others-corn" name="others" value="others-corn">
+                        <label for="others-corn">Corn</label>
+                    </div>
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="others-mustard" name="others" value="others-mustard">
+                        <label for="others-mustard">Mustard</label>
+                    </div>
+                    <div class="allergy-checkbox">
+                        <input type="checkbox" id="others-seeds" name="others" value="others-seeds">
+                        <label for="others-seeds">Seeds</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit" onclick="checkAllergies()">Filter Recipes</button>
+
+        <div class="message-box" id="messageBox"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cooking Delights. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function checkAllergies() {
+            var allergies = document.querySelectorAll('input[type="checkbox"]:checked');
+
+            if (allergies.length > 0) {
+                document.getElementById("messageBox").innerText = "We will take your allergies into account!";
+            } else {
+                document.getElementById("messageBox").innerText = "Please select your allergies.";
+            }
+        }
+    </script>
+</body>
+</html>
